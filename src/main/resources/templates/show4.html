@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+  <ul>
+    <li th:each="device : ${user.getDevices()}" th:text="'User ' + ${device.getUser_id()} + ' has device: ' + ${device.getMac_address()}" ></li>
+  </ul>
+
+</body>
+</html>
